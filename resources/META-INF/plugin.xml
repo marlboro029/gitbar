@@ -1,0 +1,52 @@
+<idea-plugin version="2">
+    <id>com.marlboro.gitbar</id>
+    <name>Git Bar</name>
+    <version>1.0.0</version>
+    <vendor email="marlboro027@foxmail.com" url="https://github.com/marlboro029/gitbar">Marlboro</vendor>
+
+    <description>
+        <![CDATA[
+        Plugin creates quick access buttons for use Git. Based on "SVN bar" plugin.
+        ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+            <ul> 1.0.0 - Initial release
+                <li>4 buttons added. [fetch merge pull push]</li>
+            </ul>
+        ]]>
+    </change-notes>
+
+    <idea-version since-build="141.0"/>
+
+    <application-components>
+        <component>
+            <implementation-class>org.jetbrains.idea.plugin.gitbar.GitBar</implementation-class>
+        </component>
+    </application-components>
+
+    <actions>
+        <action id="GitBar.Fetch" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Fetch" description="Fetch..." icon="/icons/fetch.png">
+        </action>
+        <action id="GitBar.Merge" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Merge Changes..." description="Merge Changes..." icon="/icons/merge.png">
+        </action>
+        <action id="GitBar.Pull" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Pull..." description="Pull..." icon="/icons/pull.png">
+        </action>
+        <action id="GitBar.Push" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Push..." description="Push..." icon="/icons/push.png">
+        </action>
+        <group>
+            <reference ref="GitBar.Fetch"/>
+            <reference ref="GitBar.Merge"/>
+            <reference ref="GitBar.Pull"/>
+            <reference ref="GitBar.Push"/>
+            <separator/>
+            <add-to-group group-id="MainToolBar" anchor="before" relative-to-action="HelpTopics"/>
+        </group>
+    </actions>
+
+</idea-plugin>
