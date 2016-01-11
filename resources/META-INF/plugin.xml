@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.marlboro.gitbar</id>
     <name>Git Bar</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="marlboro027@foxmail.com" url="https://github.com/marlboro029/gitbar">Marlboro</vendor>
 
     <description>
@@ -12,6 +12,9 @@
 
     <change-notes>
         <![CDATA[
+            <ul> 1.0.2 - Fix push no response
+                <li>change Git.Push to Vcs.Push</li>
+            </ul>
             <ul> 1.0.1 - Change action text
                 <li>delete ...</li>
             </ul>
