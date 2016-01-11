@@ -28,16 +28,16 @@
 
     <actions>
         <action id="GitBar.Fetch" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
-                text="Git Fetch" description="Fetch..." icon="/icons/fetch.png">
+                text="Fetch" description="Fetch..." icon="/icons/fetch.png">
         </action>
         <action id="GitBar.Merge" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
-                text="Git Merge Changes..." description="Merge Changes..." icon="/icons/merge.png">
+                text="Merge" description="Merge Changes..." icon="/icons/merge.png">
         </action>
         <action id="GitBar.Pull" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
-                text="Git Pull..." description="Pull..." icon="/icons/pull.png">
+                text="Pull" description="Pull..." icon="/icons/pull.png">
         </action>
         <action id="GitBar.Push" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
-                text="Git Push..." description="Push..." icon="/icons/push.png">
+                text="Push" description="Push..." icon="/icons/push.png">
         </action>
         <group>
             <reference ref="GitBar.Fetch"/>
