@@ -12,6 +12,9 @@
 
     <change-notes>
         <![CDATA[
+            <ul> 1.0.3 - Change icons
+                <li>change icons</li>
+            </ul>
             <ul> 1.0.2 - Fix push no response
                 <li>change Git.Push to Vcs.Push</li>
             </ul>
