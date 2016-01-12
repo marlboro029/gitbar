@@ -33,7 +33,7 @@ public class GitBar implements ApplicationComponent
     @NotNull
     public String getComponentName()
     {
-        return "GitBar";
+        return "Git Bar";
     }
 
 
